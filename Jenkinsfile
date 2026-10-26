@@ -13,13 +13,17 @@ pipeline {
             steps {
                 bat 'if not exist index.html exit /b 1'
                 bat 'if not exist tests\\test_registration.py exit /b 1'
-                bat '"C:\Users\khemr\AppData\Local\Programs\Python\Python313\python.exe" --version'
+                
+bat '"C:\\Users\\khemr\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" --version'
+
             }
         }
 
         stage('Run Automated Tests') {
             steps {
-                bat '"C:\\Users\\YourUser\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m unittest discover -s tests -p "test_*.py" -v'
+                
+bat '"C:\\Users\\khemr\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m unittest discover -s tests -p "test_*.py" -v'
+
             }
         }
     }
