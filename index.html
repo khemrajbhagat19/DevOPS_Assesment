@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f5f9;
+            margin: 0;
+            padding: 40px 16px;
+        }
+
+        .container {
+            max-width: 450px;
+            margin: auto;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 14px #00000015;
+        }
+
+        h1 {
+            text-align: center;
+            color: #243b64;
+        }
+
+        label {
+            display: block;
+            margin-top: 16px;
+            font-weight: bold;
+        }
+
+        input, select, button {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 11px;
+            margin-top: 7px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 22px;
+            background: #2457c5;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #173f96;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>Student Registration</h1>
+
+        <form id="registrationForm" action="#" method="get">
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" name="studentName"
+                   placeholder="Enter your full name" required>
+
+            <label for="rollNumber">Roll Number</label>
+            <input type="text" id="rollNumber" name="rollNumber"
+                   placeholder="Enter your roll number" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <label for="course">Course</label>
+            <select id="course" name="course" required>
+                <option value="">Select your course</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+                <option value="MBA">MBA</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+<footer>Developed by Khemraj</footer>
+</body>
+</html>
